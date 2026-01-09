@@ -1,0 +1,34 @@
+{
+  "config": {
+    "abort": {
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    },
+    "step": {
+      "user": {
+        "description": "Set up the Refoss EM16 energy monitor with hardcoded IP address."
+      }
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current": {
+        "name": "{channel_name} current"
+      },
+      "power": {
+        "name": "{channel_name} power"
+      },
+      "power_factor": {
+        "name": "{channel_name} power factor"
+      },
+      "this_month_energy": {
+        "name": "{channel_name} this month energy"
+      },
+      "this_month_energy_returned": {
+        "name": "{channel_name} this month energy returned"
+      },
+      "voltage": {
+        "name": "{channel_name} voltage"
+      }
+    }
+  }
+}
