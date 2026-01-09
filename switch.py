@@ -39,7 +39,7 @@ async def async_setup_entry(
         async_add_entities(new_entities)
         _LOGGER.debug("Device %s add switch entity success", device.dev_name)
 
-    for coordinator in hass.data[DOMAIN][COORDINATORS]:
+    for coordinator in hass.data[DOMAIN][COORDINATORS].values():
         init_device(coordinator)
 
     config_entry.async_on_unload(

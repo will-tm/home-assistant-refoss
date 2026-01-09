@@ -3,9 +3,27 @@
     "abort": {
       "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
     },
+    "error": {
+      "cannot_connect": "Failed to connect to device. Please check the host IP and UUID."
+    },
     "step": {
       "user": {
-        "description": "Set up the Refoss EM16 energy monitor with hardcoded IP address."
+        "title": "Configure Refoss Device",
+        "description": "Enter the device connection details. The UUID is required for communication with the device.",
+        "data": {
+          "host": "Host IP Address",
+          "uuid": "Device UUID",
+          "port": "Port",
+          "device_type": "Device Type",
+          "device_name": "Device Name"
+        },
+        "data_description": {
+          "host": "IP address of the Refoss device",
+          "uuid": "32-character UUID of the device (required for HTTP communication)",
+          "port": "HTTP port (default: 80)",
+          "device_type": "Device type (e.g., em16, em06, r10)",
+          "device_name": "Friendly name for the device"
+        }
       }
     }
   },

@@ -13,6 +13,22 @@ DOMAIN = "refoss"
 
 MAX_ERRORS = 2
 
+# Configuration keys
+CONF_HOST = "host"
+CONF_PORT = "port"
+CONF_UUID = "uuid"
+CONF_DEVICE_NAME = "device_name"
+CONF_DEVICE_TYPE = "device_type"
+CONF_MAC = "mac"
+CONF_CHANNELS = "channels"
+
+# Default values
+DEFAULT_PORT = 80
+DEFAULT_DEVICE_TYPE = "em16"
+DEFAULT_DEVICE_NAME = "em16"
+DEFAULT_MAC = "00:00:00:00:00:00"
+DEFAULT_CHANNELS = "[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]"
+
 # Energy monitoring
 SENSOR_EM = "em"
 

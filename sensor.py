@@ -146,7 +146,7 @@ async def async_setup_entry(
         )
         _LOGGER.debug("Device %s add sensor entity success", device.dev_name)
 
-    for coordinator in hass.data[DOMAIN][COORDINATORS]:
+    for coordinator in hass.data[DOMAIN][COORDINATORS].values():
         init_device(coordinator)
 
     config_entry.async_on_unload(
