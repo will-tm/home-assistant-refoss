@@ -4,6 +4,8 @@
 
 # Refoss Integration for Home Assistant
 
+[![Open your Home Assistant instance and open a repository inside the Home Assistant Community Store.](https://my.home-assistant.io/badges/hacs_repository.svg)](https://my.home-assistant.io/redirect/hacs_repository/?owner=will-tm&repository=home-assistant-refoss&category=integration)
+
 A custom Home Assistant integration for Refoss energy monitoring devices that uses direct HTTP communication instead of UDP broadcast discovery.
 
 > **Note:** This integration has only been tested on the **EM16** energy monitor. Other devices (EM06, R10) may work but are untested.
