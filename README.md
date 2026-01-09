@@ -65,14 +65,19 @@ The UUID is a 32-character hex string that uniquely identifies your device. It i
 
 ### HACS (Recommended)
 
-1. Add this repository as a custom repository in HACS
-2. Search for "Refoss" and install
-3. Restart Home Assistant
+1. Open HACS in Home Assistant
+2. Click the three dots in the top right corner
+3. Select **Custom repositories**
+4. Add the repository URL and select **Integration** as the category
+5. Click **Add**
+6. Search for "Refoss Energy Monitor" and click **Download**
+7. Restart Home Assistant
 
 ### Manual Installation
 
-1. Copy the `refoss` folder to your `custom_components` directory
-2. Restart Home Assistant
+1. Download or clone this repository
+2. Copy the contents to `config/custom_components/refoss/`
+3. Restart Home Assistant
 
 ## Configuration
 
